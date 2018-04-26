@@ -30,3 +30,7 @@
   - understand how to access routes
   - set up login on home page
   - figure out home background img
+
+  ## BEWARE ##
+
+  - login id collisions: https://stackoverflow.com/questions/29321659/jawbone-up-api-oauth-and-access-tokens

@@ -25,7 +25,7 @@ const AuthForm = (props) => {
         </div>
         {error && error.response && <div> {error.response.data} </div>}
       </form>
-      <a href="/auth/google">{displayName} with Google</a>
+      <a href="https://jawbone.com/auth/oauth2/auth">{displayName} with Jawbone</a>
     </div>
   )
 }

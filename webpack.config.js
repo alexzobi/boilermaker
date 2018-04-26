@@ -17,7 +17,18 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      }
+      },
+      // {
+      //   test: /\.png$/,
+      //   use: ['url-loader', 'file-loader']
+      // },
+      // {
+      //   test: /\.css$/, // use the style-loader/css-loader combos for anything matching the .css extension
+      //   use: [
+      //     'style-loader',
+      //     'css-loader',
+      //   ]
+      // }
     ]
   }
 }

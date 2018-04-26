@@ -24,7 +24,9 @@
 ## schedule ##
 
 - thursday:
-  - deploy site
-  - create app in jawbone
-  - get client_ info for the app
+  - deploy site                       - finished
+  - create app in jawbone             - finished
+  - get client_ info for the app      - finished
   - understand how to access routes
+  - set up login on home page
+  - figure out home background img

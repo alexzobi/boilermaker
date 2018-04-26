@@ -28,12 +28,13 @@ function(req, token, refreshToken, profile, done) {
   
 router.get('/', passport.authorize('jawbone', {scope: 'move_read'}))
 
-router.get('/callback',
-passport.authorize('jawbone', {
-  scope: ['move_read'],
-  failureRedirect: '/auth/jawbone/failure'
-}), function(req, res) {
-  res.redirect('/auth/jawbone/success');
-}
+router.get('/callback', passport.authorize('jawbone',
+  {
+    scope: ['move_read'],
+    failureRedirect: '/auth/jawbone/failure'
+  }),
+  function(req, res) {
+    res.redirect('/auth/jawbone/success');
+  }
 );
 

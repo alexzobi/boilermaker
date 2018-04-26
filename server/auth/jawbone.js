@@ -34,7 +34,7 @@ router.get('/callback', passport.authorize('jawbone',
     failureRedirect: '/auth/jawbone/failure'
   }),
   function(req, res) {
-    res.redirect('/home');
+    res.redirect('/');
   }
 );
 

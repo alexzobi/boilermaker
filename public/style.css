@@ -38,3 +38,12 @@ form div {
   width: 30vw;
   height: 60vh;
 }
+
+.singleCardiomon {
+  display: flex;
+  flex-direction: column;
+}
+
+#imageStats {
+  display: flex;
+}

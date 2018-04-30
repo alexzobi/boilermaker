@@ -24,12 +24,20 @@
 ## schedule ##
 
 - thursday:
-  - deploy site                       - finished
-  - create app in jawbone             - finished
-  - get client_ info for the app      - finished
-  - understand how to access routes
-  - set up login on home page
-  - figure out home background img
+  - deploy site                             - finished
+  - create app in jawbone                   - finished
+  - get client_ info for the app            - finished
+  - understand how to access routes         - finished
+  - set up login on home page               - finsihed
+  - figure out home background img          - finished
+
+  saturday:
+  - progressive web app?
+  - flesh out user home component
+  - integrate necessary info to user home
+  - get cardiomon pic to render
+  - get cardiomon stats routes
+  
 
   ## BEWARE ##
 

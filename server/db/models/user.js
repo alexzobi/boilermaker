@@ -3,19 +3,33 @@ const Sequelize = require('sequelize')
 const db = require('../db')
 
 const User = db.define('user', {
-  // email: {
-  //   type: Sequelize.STRING,
-  //   unique: true,
-  //   allowNull: false
-  // },
-  // password: {
-  //   type: Sequelize.STRING,
-  //   // Making `.password` act like a func hides it when serializing to JSON.
-  //   // This is a hack to get around Sequelize's lack of a "private" option.
-  //   get() {
-  //     return () => this.getDataValue('password')
-  //   }
-  // },
+  userName: {
+    type: Sequelize.STRING,
+    unique: true,
+  },
+  firstName: {
+    type: Sequelize.STRING,
+  },
+
+  lastName: {
+    type: Sequelize.STRING,
+  },
+
+  fullName: {
+    type: Sequelize.VIRTUAL,
+    get(){
+      return `${this.getDataValue('firstName')}  ${this.getDataValue('lastName')}`
+    }
+  },
+
+  accessToken: {
+    type: Sequelize.STRING
+  },
+
+  refreshToken: {
+    type: Sequelize.STRING
+  },
+
   salt: {
     type: Sequelize.STRING,
     // Making `.salt` act like a function hides it when serializing to JSON.
@@ -26,7 +40,15 @@ const User = db.define('user', {
   },
   jawboneId: {
     type: Sequelize.STRING
-  }
+  },
+  points: {
+    type: Sequelize.INTEGER,
+    defaultValue: 0
+  },
+  steps: {
+    type: Sequelize.INTEGER,
+    defaultValue: 0
+  },
 })
 
 module.exports = User
